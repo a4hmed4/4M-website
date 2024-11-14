@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Pod Talk - Contact Page</title>
+        <title> Contact Us</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
         <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/nav.css">
+
 <!--
 
 TemplateMo 584 Pod Talk
@@ -38,74 +40,81 @@ https://templatemo.com/tm-584-pod-talk
 
         <main>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand me-lg-5 me-0" href="index.html">
-                        <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
-                    </a>
-    
-                    <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
-                        <div class="input-group input-group-lg">
-                            <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast"
-                                aria-label="Search">
-    
-                            <button type="submit" class="form-control" id="submit">
-                                <i class="bi-search"></i>
-                            </button>
-                        </div>
-                    </form>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link " href="index.html">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-    
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="shower gel.html">Shower Gel</a></li>
-                                    <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                                    <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                                    <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                                    <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                                    <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-    
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-    
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="True.html">true</a></li>
-                                    <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-    
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link active" href="contact.html">Contact</a>
-                            </li>
+           <!-- Brand Logo on the Left -->
+        <div class="brand-logo">
+            <a href="index.html">
+                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
+            </a>
+        </div>
+
+        <!-- Sidebar on the Right -->
+        <div class="sidebar">
+            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
+                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sidebar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse sidebar-collapse" id="sidebarNav">
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
+                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
+                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
                         </ul>
-    
-                        <div class="ms-4">
-                            <a href="#" class="btn custom-btn custom-border-btn smoothscroll">Get started</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Sustainability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Activities</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item " href="index.html">Shower Gel</a></li>
+                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
+                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
+                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
+                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
+                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="true.html">true</a></li>
+                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Add other links if needed -->
+                </ul>
+
+                <!-- <div class="sidebar-footer mt-4">
+            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
+        </div> -->
+            </div>
+        </div>
+
 
 
             <header class="site-header d-flex flex-column justify-content-center align-items-center">
@@ -114,7 +123,7 @@ https://templatemo.com/tm-584-pod-talk
 
                         <div class="col-lg-12 col-12 text-center">
 
-                            <h2 class="mb-0">Contact Page</h2>
+                            <h2 class="mb-0">Contact Us</h2>
                         </div>
 
                     </div>
@@ -132,23 +141,23 @@ https://templatemo.com/tm-584-pod-talk
 
                                 <p class="d-flex border-bottom pb-3 mb-4">
                                     <strong class="d-inline me-4">Phone:</strong>
-                                    <span>010-020-0340</span>
+                                    <span>+201214422441</span>
                                 </p>
 
                                 <p class="d-flex border-bottom pb-3 mb-4">
                                     <strong class="d-inline me-4">Email:</strong>
-                                    <a href="#">inquiry@pod.co</a> 
+                                    <a href="#">inquiry@gmail.com</a> 
                                 </p>
 
                                 <p class="d-flex">
                                     <strong class="d-inline me-4">Location:</strong>
-                                    <span>1355 Market Street, Downtown San Francisco, California</span>
+                                    <span>Gamasa city, Dakahlia, Egypt</span>
                                 </p>
                             </div>
                         </div>
 
                         <div class="col-lg-5 col-12 mt-5 mt-lg-0">
-                            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.819917806043!2d103.84793601429608!3d1.281807962148459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190c2c94ccb3%3A0x11213560829baa05!2sTwitter!5e0!3m2!1sen!2smy!4v1669212183861!5m2!1sen!2smy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13616.061031010304!2d31.52614804195234!3d31.441246895294324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f75c00079c699b%3A0x7acb376a427faf5e!2sGamasa%2C%20Gamasa%20City%2C%20Dakahlia%20Governorate%207731168!5e0!3m2!1sen!2seg!4v1731626419738!5m2!1sen!2seg" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
 
                     </div>

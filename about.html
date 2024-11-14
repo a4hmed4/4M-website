@@ -1,378 +1,367 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="description" content="">
-        <meta name="author" content="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>About Us</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>About Us</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-                        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-        <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
 
-        <link href="css/templatemo-pod-talk.css" rel="stylesheet">
-<!--
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+    <!--
 
 TemplateMo 584 Pod Talk
 
 https://templatemo.com/tm-584-pod-talk
 
 -->
-    </head>
-    
-    <body>
+</head>
 
-        <main>
+<body>
 
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand me-lg-5 me-0" href="index.html">
-                        <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
-                    </a>
-    
-                    <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
-                        <div class="input-group input-group-lg">
-                            <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast"
-                                aria-label="Search">
-    
-                            <button type="submit" class="form-control" id="submit">
-                                <i class="bi-search"></i>
-                            </button>
-                        </div>
-                    </form>
-    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-lg-auto">
-                            <li class="nav-item">
-                                <a class="nav-link " href="index.html">Home</a>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link active" href="about.html">About</a>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-    
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="shower gel.html">Shower Gel</a></li>
-                                    <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                                    <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                                    <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                                    <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                                    <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-    
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-    
-                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="True.html">true</a></li>
-                                    <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-    
-                                </ul>
-                            </li>
-    
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
+    <main>
+
+        <!-- Brand Logo on the Left -->
+        <div class="brand-logo">
+            <a href="index.html">
+                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
+            </a>
+        </div>
+
+        <!-- Sidebar on the Right -->
+        <div class="sidebar">
+            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
+                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sidebar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse sidebar-collapse" id="sidebarNav">
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
+                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
+                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
                         </ul>
-    
-                        <div class="ms-4">
-                            <a href="#" class="btn custom-btn custom-border-btn smoothscroll">Get started</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Sustainability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Activities</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item " href="index.html">Shower Gel</a></li>
+                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
+                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
+                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
+                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
+                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="true.html">true</a></li>
+                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Add other links if needed -->
+                </ul>
+
+                <!-- <div class="sidebar-footer mt-4">
+            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
+        </div> -->
+            </div>
+        </div>
 
 
-            <header class="site-header d-flex flex-column justify-content-center align-items-center">
-                <div class="container">
-                    <div class="row">
 
-                        <div class="col-lg-12 col-12 text-center">
-
-                            <h2 class="mb-0">About Us</h2>
-                        </div>
-
-                    </div>
-                </div>
-            </header>
-            
-
-            <section class="about-section section-padding" id="section_2">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-8 col-12 mx-auto">
-                            <div class="pb-5 mb-5">
-                                <div class="section-title-wrap mb-4">
-                                    <h4 class="section-title">Our story</h4>
-                                </div>
-
-                                 <p>Pod Talk HTML CSS Template is made by Bootstrap v5.2.2 framework. You are allowed to modify and use this template for your business websites.</p>
-
-                                <p>You are not allowed to redistribute the downloadable template ZIP file on any other website without a permission. Please contact TemplateMo website for further information. Thank you.</p>
-
-                                <img src="images/medium-shot-young-people-recording-podcast.jpg" class="about-image mt-5 img-fluid" alt=""> 
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12 col-12">
-                            <div class="section-title-wrap mb-5">
-                                <h4 class="section-title">Our Certificates</h4>
-                            </div>
-                        </div>
-                        
-                       <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="team-thumb bg-white shadow-lg">
-                                <img src="images/profile/cute-smiling-woman-outdoor-portrait.jpg" class="about-image img-fluid" alt="">
-
-                                <div class="team-info">
-                                    <h4 class="mb-2">
-                                        Taylor
-                                        <img src="images/verified.png" class="verified-image img-fluid" alt="">
-                                    </h4>
-
-                                    <span class="badge">Modeling</span>
-
-                                    <span class="badge">Fashion</span>
-                                </div>
-
-                                <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-twitter"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-facebook"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-pinterest"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
-                            <div class="team-thumb bg-white shadow-lg">
-                                <img src="images/profile/handsome-asian-man-listening-music-through-headphones.jpg" class="about-image img-fluid" alt="">
-
-                                <div class="team-info">
-                                    <h4 class="mb-2">
-                                        William
-                                        <img src="images/verified.png" class="verified-image img-fluid" alt="">
-                                    </h4>
-
-                                    <span class="badge">Creative</span>
-
-                                    <span class="badge">Design</span>
-                                </div>
-
-                                <div class="social-share">
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-facebook"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-pinterest"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
-                            <div class="team-thumb bg-white shadow-lg">
-                                <img src="images/profile/smart-attractive-asian-glasses-male-standing-smile-with-freshness-joyful-casual-blue-shirt-portrait-white-background.jpg" class="about-image img-fluid" alt="">
-
-                                <div class="team-info">
-                                    <h4 class="mb-2">
-                                        Chan
-                                        <img src="images/verified.png" class="verified-image img-fluid" alt="">
-                                    </h4>
-
-                                    <span class="badge">Education</span>
-                                </div>
-
-                                <div class="social-share">
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-linkedin"></a>
-                                            </li>
-
-                                            <li class="social-icon-item">
-                                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-3 col-md-6 col-12">
-                            <div class="team-thumb bg-white shadow-lg">
-                                <img src="images/profile/smiling-business-woman-with-folded-hands-against-white-wall-toothy-smile-crossed-arms.jpg" class="about-image img-fluid" alt="">
-
-                                <div class="team-info">
-                                    <h4 class="mb-2">
-                                        Candice
-                                        <img src="images/verified.png" class="verified-image img-fluid" alt="">
-                                    </h4>
-
-                                    <span class="badge">Storytelling</span>
-
-                                    <span class="badge">Business</span>
-                                </div>
-
-                                <div class="social-share">
-                                    <ul class="social-icon">
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-twitter"></a>
-                                        </li>
-
-                                        <li class="social-icon-item">
-                                            <a href="#" class="social-icon-link bi-facebook"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> 
-
-                    </div>
-                </div>
-            </section>
-        </main>
-
-
-        <footer class="site-footer">
+        <header class="site-header d-flex flex-column justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
-    
-                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <div class="subscribe-form-wrap">
-                            <h6>Start with us</h6>
-    
-                            <form class="custom-form subscribe-form" action="#" method="get" role="form">
-                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
-                                    class="form-control" placeholder="Email Address" required="">
-    
-                                <div class="col-lg-12 col-12">
-                                    <button type="submit" class="form-control" id="submit">Subscribe</button>
-                                </div>
-                            </form>
+
+                    <div class="col-lg-12 col-12 text-center">
+
+                        <h2 class="mb-0">About Us</h2>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <section class="latest-podcast-section section-padding pb-0" id="our-story">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">Our Story</h4>
                         </div>
                     </div>
-    
-                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
-                        <h6 class="site-footer-title mb-3">Contact</h6>
-    
-                        <p class="mb-2"><strong class="d-inline me-2">Phone:</strong> 010-020-0340</p>
-    
+
+                    <div class="content-sectionn">
+                        <h2>From scratch to a regional leader.</h2>
+                        <p>What drives us and why we’re doing this?</p>
                         <p>
-                            <strong class="d-inline me-2">Email:</strong>
-                            <a href="#">inquiry@pod.co</a>
+                            Violeta, regional leader in the hygiene products market, was founded in 2001. Through
+                            dedicated work and investments, we quickly became a symbol of hygiene in these areas. Today,
+                            only 19 years after, Violeta employs 1,125 employees and has about 341 vehicles in its own
+                            distribution, with 220 different products in the assortment.
+                        </p>
+
+                        <h3>Our mission</h3>
+                        <p><strong>Our mission is inspired by our customers for whom we create high quality products and
+                                services, making their daily lives better and easier.</strong></p>
+
+                        <h3>Our vision</h3>
+                        <p><strong>The vision of our future is to become the No. 1 in the region for all the products
+                                and services we offer.</strong></p>
+
+                        <p>
+                            In just 2 decades of its existence, Violeta has become a synonym for quality and an integral
+                            part of many households. In addition to manufacturing, we are also engaged in export,
+                            distribution, retail sale and catering. Our services cover the needs of the youngest and the
+                            oldest.
                         </p>
                     </div>
-    
-                    <div class="col-lg-3 col-md-6 col-12">
-    
-                        <h6 class="site-footer-title mb-3">Social</h6>
-    
-                        <ul class="social-icon">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-    
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-    
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                            </li>
-                        </ul>
-                    </div>
-    
+
+
+
                 </div>
             </div>
-    
-            <div class="container pt-5">
-                <div class="row align-items-center">
-    
-                    <div class="col-lg-2 col-md-3 col-12">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
+        </section>
+
+
+        <section class="trending-podcast-section section-padding pt-0" id="social-respon">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">Social responsibility</h4>
+                        </div>
+                    </div>
+                    <div class="content_sectionn">
+                        <p>Corporate Social Responsibility (CSR) is considered an integral part of life in Violeta. We
+                            firmly believe in local community development and positive environmental impact. We want to
+                            encourage others through our daily actions to develop with us.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="trending-podcast-section section-padding pt-0" id="history">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">History and development</h4>
+                        </div>
+                    </div>
+
+                    <div class="content_sectionn">
+                        <p>The history of Violeta began in 2001 and, in the nineteen years of its existence, it has
+                            developed into one of the leading brands of hygiene products.
+                            Production in itself is a challenge, and creating a strong and lasting brand that also
+                            implies high product quality is an additional responsibility that we have for our customers
+                            and end consumers.
+                            It all started with one production line of dry wipes. The challenging beginnings were an
+                            additional incentive for us to offer our customers high-quality products. From the very
+                            beginning, we intended to listen to the customers and the market as the best guides, so over
+                            the years we have added new products when we came to understand that people want new
+                            products.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-podcast-section section-padding pt-0" id="quality">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <div class="section-title-wrap mb-5">
+                            <h4 class="section-title">Quality management</h4>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="album">
+                            <div class="responsive-container-block bg">
+                                <div class="responsive-container-block img-cont">
+                                    <img class="img custom-block custom-block-full" src="images/quality/1.png">
+                                    <img class="img custom-block custom-block-full" src="images/quality/2.png">
+                                    <img class="img img-last custom-block custom-block-full" src="images/quality/3.png">
+                                </div>
+                                <div class="responsive-container-block img-cont">
+                                    <img class="img img-big custom-block custom-block-full" src="images/quality/4.png">
+                                    <img class="img img-big img-last custom-block custom-block-full"
+                                        src="images/quality/5.png">
+                                </div>
+                                <div class="responsive-container-block img-cont">
+                                    <img class="img custom-block custom-block-full" src="images/quality/6.png">
+                                    <img class="img custom-block custom-block-full" src="images/quality/7.png">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <div class="subscribe-form-wrap">
+                        <h6>Start with us</h6>
+
+                        <form class="custom-form subscribe-form" action="#" method="get" role="form">
+                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
+                                class="form-control" placeholder="Email Address" required="">
+
+                            <div class="col-lg-12 col-12">
+                                <button type="submit" class="form-control" id="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Contact</h6>
+
+                    <p class="mb-2"><strong class="d-inline me-2">Phone:</strong> 010-020-0340</p>
+
+                    <p>
+                        <strong class="d-inline me-2">Email:</strong>
+                        <a href="#">inquiry@pod.co</a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12">
+
+                    <h6 class="site-footer-title mb-3">Social</h6>
+
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container pt-5">
+            <div class="row align-items-center">
+
+                <div class="col-lg-2 col-md-3 col-12">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
+                    </a>
+                </div>
+
+                <div class="col-lg-7 col-md-9 col-12">
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Homepage</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Browse episodes</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Help Center</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <p class="copyright-text mb-0">Copyright © 2024 Sneed
+                        <br><br>
+                        Design: <a rel="nofollow" href="https://ahmed-sneed.vercel.app/" target="_parent"><img
+                                src="images/s3.png" alt="Logo" style="height: 50px;">
                         </a>
-                    </div>
-    
-                    <div class="col-lg-7 col-md-9 col-12">
-                        <ul class="site-footer-links">
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Homepage</a>
-                            </li>
-    
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Browse episodes</a>
-                            </li>
-    
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Help Center</a>
-                            </li>
-    
-                            <li class="site-footer-link-item">
-                                <a href="#" class="site-footer-link">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="col-lg-3 col-12">
-                        <p class="copyright-text mb-0">Copyright © 2024 Sneed
-                            <br><br>
-                            Design: <a rel="nofollow" href="https://ahmed-sneed.vercel.app/" target="_parent"><img
-                                    src="images/s3.png" alt="Logo" style="height: 50px;">
-                            </a>
-                        </p>
-                    </div>
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/custom.js"></script>
+</body>
 
-    </body>
 </html>

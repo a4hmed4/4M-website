@@ -7,6 +7,9 @@ https://templatemo.com/tm-584-pod-talk
 */
 
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
 
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
@@ -23,7 +26,8 @@ https://templatemo.com/tm-584-pod-talk
   --border-color:                 #7fffd4;
   --link-hover-color:             #0066CC;
 
-  --body-font-family:             'Montserrat', sans-serif;
+
+  --body-font-family:             'Helvetica', sans-serif;
   --title-font-family:            'Sono', sans-serif;
 
   --h1-font-size:                 58px;
@@ -198,6 +202,7 @@ main {
 }
 
 
+
 /*---------------------------------------
   CUSTOM ICON COLOR               
 -----------------------------------------*/
@@ -265,7 +270,7 @@ main {
 /*---------------------------------------
   NAVIGATION              
 -----------------------------------------*/
-.navbar {
+/* .navbar {
   background-color: transparent;
   position: absolute;
   top: 0;
@@ -470,7 +475,7 @@ main {
 .navbar-toggler .navbar-toggler-icon::after {
   top: 8px;
 }
-
+ */
 
 /*---------------------------------------
   CAROUSEL        
@@ -623,6 +628,7 @@ main {
 
 .custom-block-image-wrap {
   position: relative;
+  display: block;
   height: 100%;
 }
 

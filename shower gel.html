@@ -30,6 +30,7 @@
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <link href="css/templatemo-pod-talk.css" rel="stylesheet">
     <!--
@@ -45,74 +46,81 @@ https://templatemo.com/tm-584-pod-talk
 
     <main>
 
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand me-lg-5 me-0" href="index.html">
-                    <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
-                </a>
+       <!-- Brand Logo on the Left -->
+       <div class="brand-logo">
+        <a href="index.html">
+            <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
+        </a>
+    </div>
 
-                <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
-                    <div class="input-group input-group-lg">
-                        <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast"
-                            aria-label="Search">
+    <!-- Sidebar on the Right -->
+    <div class="sidebar">
+        <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
+            aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sidebar-toggler-icon"></span>
+        </button>
 
-                        <button type="submit" class="form-control" id="submit">
-                            <i class="bi-search"></i>
-                        </button>
-                    </div>
-                </form>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link " href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item active" href="shower gel.html">Shower Gel</a></li>
-                                <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                                <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                                <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                                <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                                <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="True.html">true</a></li>
-                                <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+        <!-- Collapsible Content -->
+        <div class="collapse sidebar-collapse" id="sidebarNav">
+            <ul class="sidebar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+                        <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
+                        <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
+                        <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Sustainability</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">Activities</a>
+                </li>
 
-                    <div class="ms-4">
-                        <a href="#" class="btn custom-btn custom-border-btn smoothscroll">Get started</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item " href="index.html">Shower Gel</a></li>
+                        <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
+                        <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
+                        <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
+                        <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
+                        <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
+
+                    <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="true.html">true</a></li>
+                        <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Add other links if needed -->
+            </ul>
+
+            <!-- <div class="sidebar-footer mt-4">
+        <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
+    </div> -->
+        </div>
+    </div>
+
 
 
         <header class="site-header d-flex flex-column justify-content-center align-items-center">

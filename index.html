@@ -28,6 +28,8 @@
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/nav.css">
+
 
 
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -45,13 +47,94 @@ TemplateMo 584 Pod Talk
 https://templatemo.com/tm-584-pod-talk
 
 -->
+
+
 </head>
 
 <body>
 
     <main>
 
-        <nav class="navbar navbar-expand-lg">
+        
+        <!-- Brand Logo on the Left -->
+        <div class="brand-logo">
+            <a href="index.html">
+                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
+            </a>
+        </div>
+
+        <!-- Sidebar on the Right -->
+        <div class="sidebar">
+            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
+                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="sidebar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible Content -->
+            <div class="collapse sidebar-collapse" id="sidebarNav">
+                <ul class="sidebar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
+                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
+                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Sustainability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Activities</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item " href="index.html">Shower Gel</a></li>
+                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
+                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
+                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
+                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
+                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="true.html">true</a></li>
+                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <!-- Add other links if needed -->
+                </ul>
+
+                <!-- <div class="sidebar-footer mt-4">
+            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
+        </div> -->
+            </div>
+        </div>
+
+
+
+
+        <!-- <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand me-lg-5 me-0" href="index.html">
                     <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
@@ -59,14 +142,14 @@ https://templatemo.com/tm-584-pod-talk
 
                 <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
                     <div class="input-group input-group-lg">
-                        <input name="search" type="search" class="form-control" id="search" placeholder="Search Podcast"
+                        <input name="search" type="search" class="form-control" id="search" placeholder="Search"
                             aria-label="Search">
 
                         <button type="submit" class="form-control" id="submit">
                             <i class="bi-search"></i>
                         </button>
                     </div>
-                </form>
+                </form> 
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,11 +159,27 @@ https://templatemo.com/tm-584-pod-talk
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
+                            <a class="nav-link active " href="index.html">Home</a>
                         </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item " href="">Our story</a></li>
+                                <li><a class="dropdown-item" href="">Social responsibility</a></li>
+                                <li><a class="dropdown-item" href="">History and development</a></li>
+                                <li><a class="dropdown-item" href="">Quality management</a></li>
+                               
+
+                            </ul>
+                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link " href="index.html">Sustainability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Activities</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -88,7 +187,7 @@ https://templatemo.com/tm-584-pod-talk
                                 data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
 
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="shower gel.html">Shower Gel</a></li>
+                                <li><a class="dropdown-item active" href="index.html">Shower Gel</a></li>
                                 <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
                                 <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
                                 <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
@@ -102,12 +201,14 @@ https://templatemo.com/tm-584-pod-talk
                                 data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
 
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="True.html">true</a></li>
+                                <li><a class="dropdown-item" href="true.html">true</a></li>
                                 <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
 
                             </ul>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">News</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
@@ -118,7 +219,7 @@ https://templatemo.com/tm-584-pod-talk
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>  -->
 
 
         <section class="hero-section">
@@ -132,7 +233,7 @@ https://templatemo.com/tm-584-pod-talk
                             <p class="text-white">High quality cleaning products to make daily home life more
                                 comfortable and easier.</p>
 
-                            <a href="#section_2" class="btn custom-btn smoothscroll mt-3">Contact us</a>
+                            <a href="contact.html" class="btn custom-btn smoothscroll mt-3">Contact us</a>
                         </div>
 
                         <div class="owl-carousel owl-theme">
@@ -297,7 +398,8 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-2 col-md-2 col-12 mb-4 mb-lg-0">
                         <div class="custom-block custom-block-overlay">
                             <a href="shower gel.html" class="custom-block-image-wrap">
-                                <img src="images/Photoroom/DSC07595-Photoroom.jpg" class="custom-block-image img-fluid" alt="">
+                                <img src="images/Photoroom/DSC07595-Photoroom.jpg" class="custom-block-image img-fluid"
+                                    alt="">
                             </a>
 
                             <div class="custom-block-info custom-block-overlay-info">
@@ -307,7 +409,7 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
                         </div>
                     </div>
@@ -325,7 +427,7 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
                         </div>
                     </div>
@@ -333,7 +435,8 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="custom-block custom-block-overlay">
                             <a href="fabric softener.html" class="custom-block-image-wrap">
-                                <img src="images/Photoroom/DSC07578-Photoroom.png" class="custom-block-image img-fluid" alt="">
+                                <img src="images/Photoroom/DSC07578-Photoroom.png" class="custom-block-image img-fluid"
+                                    alt="">
                             </a>
 
                             <div class="custom-block-info custom-block-overlay-info">
@@ -343,7 +446,7 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
                         </div>
                     </div>
@@ -351,7 +454,8 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="custom-block custom-block-overlay">
                             <a href="Hand Soup.html" class="custom-block-image-wrap">
-                                <img src="images/Photoroom (1)/handsoup.png" class="custom-block-image img-fluid" alt="">
+                                <img src="images/Photoroom (1)/handsoup.png" class="custom-block-image img-fluid"
+                                    alt="">
                             </a>
 
                             <div class="custom-block-info custom-block-overlay-info">
@@ -361,7 +465,7 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
                         </div>
                     </div>
@@ -369,7 +473,8 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="custom-block custom-block-overlay">
                             <a href="power auto.html" class="custom-block-image-wrap">
-                                <img src="images/Photoroom (1)/powergel.png" class="custom-block-image img-fluid" alt="">
+                                <img src="images/Photoroom (1)/powergel.png" class="custom-block-image img-fluid"
+                                    alt="">
                             </a>
 
                             <div class="custom-block-info custom-block-overlay-info">
@@ -379,7 +484,7 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
                         </div>
                     </div>
@@ -387,7 +492,8 @@ https://templatemo.com/tm-584-pod-talk
                     <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0">
                         <div class="custom-block custom-block-overlay">
                             <a href="Multi Cleaner.html" class="custom-block-image-wrap">
-                                <img src="images/Photoroom (2)/multicleaner.png" class="custom-block-image img-fluid" alt="">
+                                <img src="images/Photoroom (2)/multicleaner.png" class="custom-block-image img-fluid"
+                                    alt="">
                             </a>
 
                             <div class="custom-block-info custom-block-overlay-info">
@@ -397,9 +503,9 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-0">
@@ -415,17 +521,17 @@ https://templatemo.com/tm-584-pod-talk
                                     </a>
                                 </h5>
 
-                               <!-- <p class="badge mb-0">50 Episodes</p> -->
+                                <!-- <p class="badge mb-0">50 Episodes</p> -->
                             </div>
-                            
+
                         </div>
                     </div>
 
-                    
 
-                   
 
-                    
+
+
+
 
                 </div>
             </div>
