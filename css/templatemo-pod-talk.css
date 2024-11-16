@@ -27,8 +27,8 @@ body {
   --link-hover-color:             #0066CC;
 
 
-  --body-font-family:             'europa grotesk SH';
-  --title-font-family:            'europa grotesk SH light';
+  --body-font-family:             'Roboto',sans-serif;
+  --title-font-family:            ' Roboto',Arial,sans-serif;
 
   --h1-font-size:                 58px;
   --h2-font-size:                 46px;
