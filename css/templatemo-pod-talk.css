@@ -15,45 +15,146 @@ body {
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #00CC99;
-  --secondary-color:              #0066CC;
-  --section-bg-color:             #f0f8ff;
-  --custom-btn-bg-color:          #0066CC;
-  --custom-btn-bg-hover-color:    #00CC99;
-  --dark-color:                   #000000;
-  --p-color:                      #717275;
-  --border-color:                 #7fffd4;
-  --link-hover-color:             #0066CC;
+  --white-color: #ffffff;
+  --primary-color: #00CC99;
+  --secondary-color: #0066CC;
+  --section-bg-color: #f0f8ff;
+  --custom-btn-bg-color: #0066CC;
+  --custom-btn-bg-hover-color: #00CC99;
+  --dark-color: #000000;
+  --p-color: #717275;
+  --border-color: #7fffd4;
+  --link-hover-color: #0066CC;
 
 
-  --body-font-family:             'Roboto',sans-serif;
-  --title-font-family:            ' Roboto',Arial,sans-serif;
+  --body-font-family: 'Roboto', sans-serif;
+  --title-font-family: ' Roboto', Arial, sans-serif;
 
-  --h1-font-size:                 58px;
-  --h2-font-size:                 46px;
-  --h3-font-size:                 32px;
-  --h4-font-size:                 28px;
-  --h5-font-size:                 24px;
-  --h6-font-size:                 22px;
-  --p-font-size:                  16px;
-  --menu-font-size:               18px;
+  --h1-font-size: 58px;
+  --h2-font-size: 46px;
+  --h3-font-size: 32px;
+  --h4-font-size: 28px;
+  --h5-font-size: 24px;
+  --h6-font-size: 22px;
+  --p-font-size: 16px;
+  --menu-font-size: 18px;
 
-  --border-radius-large:          100px;
-  --border-radius-medium:         20px;
-  --border-radius-small:          10px;
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
 
-  --font-weight-light:            300;
-  --font-weight-normal:           400;
-  --font-weight-medium:           500;
-  --font-weight-semibold:         600;
-  --font-weight-bold:             700;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 }
 
 body {
   background-color: var(--white-color);
-  font-family: var(--body-font-family); 
+  font-family: var(--body-font-family);
 }
+
+
+.custom-block-image {
+  object-fit: contain;
+  /* Ensures the entire image fits within its container */
+  width: 10%;
+  /* Makes the image scale responsively */
+  height: auto;
+  /* Maintains aspect ratio */
+  max-height: 200px;
+  /* Optional: limits height for uniformity */
+}
+
+/* Additional padding and alignment for small screens */
+@media (max-width: 768px) {
+  .custom-block {
+    margin-bottom: 15px;
+    text-align: center;
+    /* Centers content on smaller devices */
+  }
+
+  .custom-block-image {
+    max-height: 150px;
+    /* Optional: reduce height further on smaller screens */
+  }
+}
+
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( boxes )             
+-----------------------------------------*/
+
+    /* Container for the boxes */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Flexbox for responsiveness */
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    /* Each box */
+    .box {
+        flex: 1 1 calc(33.33% - 20px); /* Adjusts to 3 per row */
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Box content */
+    .icon {
+        font-size: 40px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .num {
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .text {
+        font-size: 18px;
+        color: #666;
+    }
+
+    /* Media query for tablets */
+    @media (max-width: 768px) {
+        .box {
+            flex: 1 1 calc(40% - 20px); /* Adjusts to 2 per row */
+        }
+    }
+
+    /* Media query for mobile devices */
+    @media (max-width: 480px) {
+        .box {
+            flex: 1 1 70%; /* Full width for smaller screens */
+        }
+
+        .icon {
+            font-size: 24px;
+        }
+
+        .num {
+            font-size: 16px;
+        }
+
+        .text {
+            font-size: 12px;
+        }
+    }
+
 
 
 /*---------------------------------------
@@ -74,7 +175,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--title-font-family); 
+  font-family: var(--title-font-family);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -116,7 +217,7 @@ ul li {
   font-weight: var(--font-weight-light);
 }
 
-a, 
+a,
 button {
   touch-action: manipulation;
   transition: all 0.3s;
@@ -140,6 +241,15 @@ strong {
 ::selection {
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+
+.custom-block-image {
+  max-width: 100%;
+  /* Scale the image width relative to its container */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Removes extra whitespace (optional) */
 }
 
 
@@ -197,7 +307,7 @@ main {
   opacity: 0.85;
 }
 
-.section-overlay + .container {
+.section-overlay+.container {
   position: relative;
 }
 
@@ -254,7 +364,8 @@ main {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-image: url('../images/templatemo-wave-header.jpg'), linear-gradient(#348CD2, #FFFFFF);;
+  background-image: url('../images/templatemo-wave-header.jpg'), linear-gradient(#348CD2, #FFFFFF);
+  ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -528,7 +639,7 @@ main {
 
 .owl-carousel-info {
   background-color: var(--section-bg-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -582,7 +693,7 @@ main {
 
 .owl-carousel .owl-dots {
   background-color: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border-radius: var(--border-radius-large);
   display: inline-block;
   margin: auto;
@@ -595,7 +706,7 @@ main {
   margin-top: 40px;
 }
 
-.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: var(--secondary-color);
 }
@@ -615,7 +726,7 @@ main {
 
 .custom-block:hover {
   background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
   border-color: transparent;
   transform: translateY(-3px);
 }
@@ -632,7 +743,7 @@ main {
   height: 100%;
 }
 
-.custom-block-image-wrap > a {
+.custom-block-image-wrap>a {
   display: block;
 }
 
@@ -703,7 +814,7 @@ main {
   padding: 7px 15px;
 }
 
-.custom-block .custom-block-info + div .badge {
+.custom-block .custom-block-info+div .badge {
   background-color: var(--dark-color);
   color: var(--white-color);
   border-radius: 50px !important;
@@ -718,7 +829,7 @@ main {
   margin-bottom: 5px;
 }
 
-.custom-block .custom-block-info + div .badge:hover {
+.custom-block .custom-block-info+div .badge:hover {
   background-color: var(--secondary-color);
 }
 
@@ -879,7 +990,8 @@ main {
   margin-right: 10px;
 }
 
-.active>.page-link, .page-link.active {
+.active>.page-link,
+.page-link.active {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
 }
@@ -1019,7 +1131,7 @@ main {
   padding-bottom: 150px;
 }
 
-.site-footer > .container {
+.site-footer>.container {
   position: relative;
   top: 50px;
   padding-top: 100px;
@@ -1108,10 +1220,9 @@ main {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (min-width: 2160px) {
-	.hero-section {
-	  background-size: 100% 90%;
-	  /* T o o p l a t e . c o m   C u s t o m i z e d */
-	}
+  .hero-section {
+    background-size: 100% 90%;
+  }
 }
 
 
@@ -1119,13 +1230,32 @@ main {
   .site-footer {
     padding-top: 250px;
   }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
+  }
+
 }
 
 @media screen and (max-width: 1240px) {
-	.hero-section {
-	  background-size: 116%;
-	  /* T o o p l a t e . c o m   C u s t o m i z e d */
-	}
+  .hero-section {
+    background-size: 116%;
+  }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1152,11 +1282,10 @@ main {
   h6 {
     font-size: 18px;
   }
-  
+
   .hero-section {
-	  background-size: 160% 66%; 
-	  /* T o o p l a t e . c o m   C u s t o m i z e d */
-	}
+    background-size: 160% 66%;
+  }
 
   .section-padding {
     padding-top: 50px;
@@ -1208,10 +1337,9 @@ main {
 }
 
 @media screen and (max-width: 540px) {
-	.hero-section {
-  		background-size: 180% 65%;
-		/* T o o p l a t e . c o m   C u s t o m i z e d */
-	}
+  .hero-section {
+    background-size: 180% 65%;
+  }
 
   .custom-block .custom-block-top {
     flex-direction: column;
@@ -1243,23 +1371,64 @@ main {
   h5 {
     font-size: 20px;
   }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
+  }
+
 }
 
 @media screen and (max-width: 414px) {
   .search-form {
-    max-width: 200px;
+    max-width: 100px;
+  }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
   }
 
 }
 
 @media (max-width: 576px) {
   img {
-      width: 80%; /* ضبط العرض للصور على الشاشات الصغيرة */
+    width: 80%;
+    /* ضبط العرض للصور على الشاشات الصغيرة */
   }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
+  }
+
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
   img {
-      width: 60%; /* ضبط العرض للصور على الشاشات المتوسطة */
+    width: 60%;
+    /* ضبط العرض للصور على الشاشات المتوسطة */
   }
+
+  .custom-block-image {
+    max-width: 70%;
+    /* Scale the image width relative to its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Removes extra whitespace (optional) */
+  }
+
 }
