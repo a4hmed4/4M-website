@@ -98,6 +98,52 @@
       margin: 0 0 0 0;
     }
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu {
+        display: flex;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1 1 200px;
+    margin: 10px;
+}
   
   @media (max-width: 500px) {
     .album .img {

@@ -67,6 +67,7 @@ body {
   /* Optional: limits height for uniformity */
 }
 
+
 /* Additional padding and alignment for small screens */
 @media (max-width: 768px) {
   .custom-block {
@@ -635,6 +636,16 @@ main {
   position: relative;
   overflow: hidden;
   text-align: left;
+}
+@media (max-width: 768px) {
+  .owl-carousel-info-wrap {
+      text-align: center; /* Center-align text for smaller screens */
+  }
+
+  .owl-carousel-info-wrap img {
+      width: 100%; /* Ensure the image adapts to smaller screens */
+      height: auto; /* Maintain aspect ratio */
+  }
 }
 
 .owl-carousel-info {
