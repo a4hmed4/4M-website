@@ -4,7 +4,7 @@
 margin: 0 auto;
 font-family: 'Poppins', sans-serif;
 font-size: 13px;
-line-height: 16px;}
+line-height: 15px;}
 .ss-main-container {
   width: 100%;
   background: #333333;
@@ -380,7 +380,7 @@ flex-direction: column;
 .card-container-three article .card-back-side{
     -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
-            background: #ffffff;
+            background: #a54040;
             backface-visibility: hidden;
             transition: all 0.8s ease;
             padding: 0;
