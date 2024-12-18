@@ -39,12 +39,16 @@ a {
 
 
 .site-navbar {
-  background-color:#3e3f4179;
+  background-color:#3e3f4154;
   margin-bottom: 0px;
   z-index: 1999;
-  position:absolute ;
+  position:relative ;
   top: 0rem;
-  width: 100%; }
+  width: 100%;
+  height: 80px; 
+  
+
+}
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
@@ -55,7 +59,7 @@ a {
   .site-navbar .site-logo {
     position: relative;
     left: 0;
-    font-size: 24px !important; }
+    font-size: 21px !important; }
   .site-navbar .site-navigation .site-menu {
     margin-bottom: 0; }
     .site-navbar .site-navigation .site-menu .active > a span {
@@ -315,7 +319,7 @@ a {
     .site-mobile-menu .site-nav-wrap[data-class="social"] {
       float: left;
       width: 100%;
-      margin-top: 30px;
+      margin-top: 20px;
       padding-bottom: 5em; }
       .site-mobile-menu .site-nav-wrap[data-class="social"] > li {
         width: auto; }
