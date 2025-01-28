@@ -2,130 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                // Create a temporary container for the fetched content
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>About Us</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
-
-
-    <!-- CSS FILES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/gallery.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link href="css/templatemo-pod-talk.css" rel="stylesheet">
-    <!--
-
-TemplateMo 584 Pod Talk
-
-https://templatemo.com/tm-584-pod-talk
-
--->
+                // Append each child element of the fetched content to <head>
+                Array.from(tempDiv.children).forEach((child) => {
+                    document.head.appendChild(child);
+                });
+            })
+            .catch((error) => {
+                console.error('Error loading head content:', error);
+            });
+    </script>
 </head>
+
 
 <body>
 
     <main>
 
-        <!-- Brand Logo on the Left -->
-        <div class="brand-logo">
-            <a href="index.html">
-                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
-            </a>
-        </div>
-
-        <!-- Sidebar on the Right -->
-        <div class="sidebar">
-            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
-                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sidebar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapsible Content -->
-            <div class="collapse sidebar-collapse" id="sidebarNav">
-                <ul class="sidebar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="about.html" id="aboutDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
-                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
-                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
-                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Sustainability</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Activities</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item " href="shower gel.html">Shower Gel</a></li>
-                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                            <li><a class="dropdown-item" href="glass.html">Glass Cleaner</a></li>
-                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-                            <li><a class="dropdown-item" href="air freshener.html">Air Freshener</a></li>
-                            <li><a class="dropdown-item" href="other.html">Other</a></li>
-
-
-
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="true.html">true</a></li>
-                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <!-- Add other links if needed -->
-                </ul>
-
-                <!-- <div class="sidebar-footer mt-4">
-            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
-        </div> -->
-            </div>
-        </div>
+        <div id="navbar"></div>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        </script>
 
 
         <header class="site-header d-flex flex-column justify-content-center align-items-center">
