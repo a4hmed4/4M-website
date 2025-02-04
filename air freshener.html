@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="">
     <meta name="author" content="">
 
     <title>Air Freshener</title>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 
+    
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -26,112 +28,101 @@
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/card2.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/heading.css">
+
+    <style>
+        :root {
+            --light: #6c5ce7;
+            --extra-light: #41099ca4;
+        }
+
+        header {
+            background-image: url("images/air_freshener_banner.png");
+        }
+    </style>
+
 
 
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/gallery.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/nav2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/nav.css">
 
     <link href="css/templatemo-pod-talk.css" rel="stylesheet">
-    <!--
 
-TemplateMo 584 Pod Talk
-
-https://templatemo.com/tm-584-pod-talk
-
--->
 </head>
 
 <body>
 
-    <main>
 
-        <!-- Brand Logo on the Left -->
-        <div class="brand-logo">
-            <a href="index.html">
-                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
-            </a>
+    <header>
+        <nav class="site-navigation position-relative text-right" role="navigation">
+            <div class="nav__logo"><a href="index.html"> <img src="images/logos.png" class="logo-image img-fluid"
+                        alt="Brand Logo"></a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html"><span>Home</span></a></li>
+                <li class="link">
+                    <a href="about.html"><span>About</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a href="about.html#our-story">Our Story</a></li>
+                        <li><a href="about.html#social_respon">Social Responsibility</a></li>
+                        <li><a href="about.html#history">History and development</a></li>
+                        <li><a href="about.html#quality">Quality Management</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <a href="index.html#section_3"><span>Products</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a href="shower gel.html">Shower Gel</a></li>
+                        <li><a href="dish liquid.html">Dish Liquid</a></li>
+                        <li><a href="glass.html">Glass Cleaner</a></li>
+                        <li><a href="fabric softener.html">Fabric Softener</a></li>
+                        <li><a href="hand soup.html">Hand Soup</a></li>
+                        <li><a href="power auto.html">Power Gel Automatic</a></li>
+                        <li><a href="multi cleaner.html">Multi Cleaner</a></li>
+                        <li><a href="air freshener.html">Air Freshener</a></li>
+                        <li><a href="other.html">Other</a></li>
+
+                    </ul>
+                </li>
+                <li class="link">
+                    <a href="index.html#section_2"><span>OurBrands</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a href="true.html">True</a></li>
+                        <li><a href="vsh.html">VSH</a></li>
+
+                    </ul>
+                </li>
+                <li class="link"><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+            <div class="toggle__btn"><i class="ri-menu-line"></i></div>
+        </nav>
+        <div class="hero">
+            <h2>Explore </h2>
+            <h1>True Air</h1>
         </div>
+    </header>
+    <script>
+        const toggleButton = document.querySelector(".toggle__btn")
+        const toggleButtonIcon = document.querySelector(".toggle__btn i")
+        const menu = document.querySelector(".nav__links")
 
-        <!-- Sidebar on the Right -->
-        <div class="sidebar">
-            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
-                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sidebar-toggler-icon"></span>
-            </button>
+        toggleButton.onclick = function () {
+            menu.classList.toggle("open");
+            const isOpen = menu.classList.contains("open");
 
-            <!-- Collapsible Content -->
-            <div class="collapse sidebar-collapse" id="sidebarNav">
-                <ul class="sidebar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
-                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
-                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
-                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Sustainability</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Activities</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item " href="shower gel.html">Shower Gel</a></li>
-                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                            <li><a class="dropdown-item" href="glass.html">Glass Cleaner</a></li>
-                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-                            <li><a class="dropdown-item active" href="air freshener.html">Air Freshener</a></li>
-                            <li><a class="dropdown-item" href="other.html">Other</a></li>
+            toggleButtonIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line"
+        };
+    </script>
 
 
 
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="true.html">true</a></li>
-                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <!-- Add other links if needed -->
-                </ul>
-
-                <!-- <div class="sidebar-footer mt-4">
-            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
-        </div> -->
-            </div>
-        </div>
-
-
-        <header class="site-header d-flex flex-column justify-content-center align-items-center">
+    <!-- <header class="site-header d-flex flex-column justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
 
@@ -142,8 +133,9 @@ https://templatemo.com/tm-584-pod-talk
 
                 </div>
             </div>
-        </header>
+        </header> -->
 
+    <main>
 
         <section class="latest-podcast-section section-padding pb-0" id="section_2">
             <div class="container">
@@ -154,17 +146,17 @@ https://templatemo.com/tm-584-pod-talk
                             <h4 class="section-title">Our Products</h4>
                         </div>
                     </div>
-                   
+
 
                     <div class="row justify-content-center">
                         <div class="album">
                             <div class="responsive-container-block bg">
                                 <div class="responsive-container-block img-cont"
                                     style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
+                                    <div class="flipcard">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/11.png">
+                                                <img class="img custom-block custom-block-full" src="images/ac/101.jpg">
 
                                             </div>
                                             <div class="flip-card-back">
@@ -174,9 +166,9 @@ https://templatemo.com/tm-584-pod-talk
                                                 <p>
                                                     Air Freshener
                                                     <br>
-                                                    Lavender
+                                                    Azura Lavender
                                                     <br>
-                                                    Size: 500 ml
+                                                    Size: 425 ml
 
                                                 </p>
                                             </div>
@@ -186,10 +178,10 @@ https://templatemo.com/tm-584-pod-talk
 
                                 <div class="responsive-container-block img-cont"
                                     style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
+                                    <div class="flipcard">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/22.png">
+                                                <img class="img custom-block custom-block-full" src="images/ac/102.jpg">
 
                                             </div>
                                             <div class="flip-card-back">
@@ -199,9 +191,9 @@ https://templatemo.com/tm-584-pod-talk
                                                 <p>
                                                     Air Freshener
                                                     <br>
-                                                    oric
+                                                    Breeze
                                                     <br>
-                                                    Size: 500 ml
+                                                    Size: 425 ml
 
                                                 </p>
                                             </div>
@@ -211,10 +203,10 @@ https://templatemo.com/tm-584-pod-talk
 
                                 <div class="responsive-container-block img-cont"
                                     style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
+                                    <div class="flipcard">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/33.png">
+                                                <img class="img custom-block custom-block-full" src="images/ac/103.jpg">
 
                                             </div>
                                             <div class="flip-card-back">
@@ -226,7 +218,7 @@ https://templatemo.com/tm-584-pod-talk
                                                     <br>
                                                     Tulip
                                                     <br>
-                                                    Size: 500 ml
+                                                    Size: 425 ml
 
                                                 </p>
                                             </div>
@@ -236,60 +228,10 @@ https://templatemo.com/tm-584-pod-talk
 
                                 <div class="responsive-container-block img-cont"
                                     style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
+                                    <div class="flipcard">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/44.png">
-
-                                            </div>
-                                            <div class="flip-card-back">
-                                                <br>
-                                                <h3>True Air</h3>
-                                                <br>
-                                                <p>
-                                                    Air Freshener
-                                                    <br>
-                                                    Oud Edition
-                                                    <br>
-                                                    Size: 500 ml
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="responsive-container-block img-cont"
-                                    style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/55.png">
-
-                                            </div>
-                                            <div class="flip-card-back">
-                                                <br>
-                                                <h3>True Air</h3>
-                                                <br>
-                                                <p>
-                                                    Air Freshener
-                                                    <br>
-                                                    Rose Seed
-                                                    <br>
-                                                    Size: 500 ml
-
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="responsive-container-block img-cont"
-                                    style=" display: grid; justify-items: start;">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img class="img custom-block custom-block-full" src="images/ac/66.png">
+                                                <img class="img custom-block custom-block-full" src="images/ac/104.jpg">
 
                                             </div>
                                             <div class="flip-card-back">
@@ -301,15 +243,215 @@ https://templatemo.com/tm-584-pod-talk
                                                     <br>
                                                     Espresso
                                                     <br>
-                                                    Size: 500 ml
+                                                    Size: 425 ml
 
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                             
-                               
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/105.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Oud Edition
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/106.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Rose
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/107.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Mandarin
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/108.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Princess
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/109.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Blue X
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/110.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Oris
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/111.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Elite
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="responsive-container-block img-cont"
+                                    style=" display: grid; justify-items: start;">
+                                    <div class="flipcard">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="img custom-block custom-block-full" src="images/ac/112.jpg">
+
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <br>
+                                                <h3>True Air</h3>
+                                                <br>
+                                                <p>
+                                                    Air Freshener
+                                                    <br>
+                                                    Mont
+                                                    <br>
+                                                    Size: 425 ml
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -324,126 +466,36 @@ https://templatemo.com/tm-584-pod-talk
         <br>
         <br>
 
-
-        <!-- <section class="trending-podcast-section section-padding pt-0">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12">
-                        <div class="section-title-wrap mb-5">
-                            <h4 class="section-title">Trending episodes</h4>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section> -->
     </main>
 
 
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 
-                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <div class="subscribe-form-wrap">
-                        <h6>Start with us</h6>
-
-                        <form class="custom-form subscribe-form" action="#" method="get" role="form">
-                            <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*"
-                                class="form-control" placeholder="Email Address" required="">
-
-                            <div class="col-lg-12 col-12">
-                                <button type="submit" class="form-control" id="submit">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
-                    <h6 class="site-footer-title mb-3">Contact</h6>
-
-                    <p class="mb-2"><strong class="d-inline me-2">Phone:</strong> +201011811180</p>
-                    <p class="mb-2"><strong class="d-inline me-2">Phone: </strong>+201027746774</p>
-
-                    <p>
-                        <strong class="d-inline me-2">Email:</strong>
-                        <a href="mailto:Info@4m-group.com">Info@4m-group.com</a>
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-12">
-
-                    <h6 class="site-footer-title mb-3">Social</h6>
-
-                    <ul class="social-icon">
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-instagram"></a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-twitter"></a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="container pt-5">
-            <div class="row align-items-center">
-
-                <div class="col-lg-2 col-md-3 col-12">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/logos.png" class="logo-image img-fluid" alt="templatemo pod talk">
-                    </a>
-                </div>
-
-                <div class="col-lg-7 col-md-9 col-12">
-                    <ul class="site-footer-links">
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Home</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#section_2" class="site-footer-link">Browse Brands</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#section_3" class="site-footer-link">Browse OurProducts</a>
-                        </li>
-
-                        <li class="site-footer-link-item">
-                            <a href="#" class="site-footer-link">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-12">
-                    <p class="copyright-text mb-0">Copyright © 2024 Sneed
-                        <br><br>
-                        Design: <a rel="nofollow" href="https://ahmed-sneed.vercel.app/" target="_parent"><img
-                                src="images/s3.png" alt="Logo" style="height: 50px;">
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- JAVASCRIPT FILES -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/heading.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
 

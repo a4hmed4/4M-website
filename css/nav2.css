@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*  :root {
+  --extra-light: #42099c;
+  
+} */
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  height: 100vh;
+/*   background-image: url("assets/air_freshener_banner.png");*/
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgba(139, 139, 139, 0.247);
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--extra-light);
+}
+
+.nav__links {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  width: 100%;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.open {
+  display: flex;
+  background-color: #aeadafb9;
+}
+
+.nav__links .link {
+  font-size: 1.25rem;
+  color: var(--extra-light);
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.link span {
+  color: var(--extra-light);
+}
+
+.dropd {
+  position: absolute; /* Make sure it doesn't disappear when hovering */
+  top: 100%; /* Position it right below the parent */
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  min-width: 250px;
+  min-height: auto;
+  list-style: none;
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.dropd a {
+  padding: 10px 15px;
+  display: block;
+  color:var(--light);
+  transition: background 0.3s;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+
+.dropd a:hover {
+  color:#030161;
+  
+}
+
+.link:hover .dropd {
+  display: block;
+}
+
+.link span:hover {
+  color: #030161;
+}
+
+.nav__links .link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggle__btn {
+  display: block;
+  color: var(--extra-light);
+  font-size: 2rem;
+}
+
+.hero {
+  max-width: 1200px;
+  height: calc(100vh - 80px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--extra-light);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1rem;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 640px) {
+  .nav__links {
+    width: 250px;
+  }
+
+  .hero {
+    align-items: flex-start;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__links {
+    position: unset;
+    width: unset;
+    flex-direction: row;
+    gap: 0.5rem;
+    display: flex !important;
+    background: transparent;
+  }
+
+  .toggle__btn {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 4rem;
+  }
+
+  .hero h1 {
+    font-size: 8rem;
+  }
+}

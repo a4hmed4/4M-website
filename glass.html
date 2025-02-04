@@ -22,10 +22,24 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/nav2.css">
+    <link rel="stylesheet" href="css/heading.css">
 
+    <style>
+        :root {
+            --light: #6c5ce7;
+            --extra-light: #226b28b2;
+        }
+        header {
+
+            background-image: url("images/glass_bg.png");
+
+        }
+    </style>
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/gallery.css">
@@ -48,102 +62,68 @@ https://templatemo.com/tm-584-pod-talk
 
 <body>
 
+    <header>
+        <nav class="site-navigation position-relative text-right" role="navigation">
+            <div class="nav__logo"><a href="index.html"> <img src="images/logos.png" class="logo-image img-fluid"
+                        alt="Brand Logo"></a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html"><span>Home</span></a></li>
+                <li class="link">
+                    <a href="about.html"><span>About</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a href="about.html#our-story">Our Story</a></li>
+                        <li><a href="about.html#social_respon">Social Responsibility</a></li>
+                        <li><a href="about.html#history">History and development</a></li>
+                        <li><a href="about.html#quality">Quality Management</a></li>
+                    </ul>
+                </li>
+                <li class="link">
+                    <a href="index.html#section_3"><span>Products</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a href="shower gel.html">Shower Gel</a></li>
+                        <li><a href="dish liquid.html">Dish Liquid</a></li>
+                        <li><a href="glass.html">Glass Cleaner</a></li>
+                        <li><a href="fabric softener.html">Fabric Softener</a></li>
+                        <li><a href="hand soup.html">Hand Soup</a></li>
+                        <li><a href="power auto.html">Power Gel Automatic</a></li>
+                        <li><a href="multi cleaner.html">Multi Cleaner</a></li>
+                        <li><a href="air freshener.html">Air Freshener</a></li>
+                        <li><a  href="other.html">Other</a></li>
+
+                    </ul>
+                </li>
+                <li class="link">
+                    <a href="index.html#section_2"><span>OurBrands</span></a>
+                    <ul class="dropd arrow-top">
+                        <li><a  href="true.html">True</a></li>
+                        <li><a  href="vsh.html">VSH</a></li>
+
+                    </ul>
+                </li>
+                <li class="link"><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+            <div class="toggle__btn"><i class="ri-menu-line"></i></div>
+        </nav>
+        <div class="hero">
+            <h2>Explore </h2>
+            <h1>True Glass</h1>
+        </div>
+    </header>
+    <script>
+        const toggleButton = document.querySelector(".toggle__btn")
+        const toggleButtonIcon = document.querySelector(".toggle__btn i")
+        const menu = document.querySelector(".nav__links")
+
+        toggleButton.onclick = function () {
+            menu.classList.toggle("open");
+            const isOpen = menu.classList.contains("open");
+
+            toggleButtonIcon.classList = isOpen ? "ri-close-line" : "ri-menu-line"
+        };
+    </script>
+
+
     <main>
-
-        <!-- Brand Logo on the Left -->
-        <div class="brand-logo">
-            <a href="index.html">
-                <img src="images/logos.png" class="logo-image img-fluid" alt="Brand Logo">
-            </a>
-        </div>
-
-        <!-- Sidebar on the Right -->
-        <div class="sidebar">
-            <button class="sidebar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarNav"
-                aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="sidebar-toggler-icon"></span>
-            </button>
-
-            <!-- Collapsible Content -->
-            <div class="collapse sidebar-collapse" id="sidebarNav">
-                <ul class="sidebar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
-                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
-                            <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
-                            <li><a class="dropdown-item" href="about.html#social_respon">Social Responsibility</a></li>
-                            <li><a class="dropdown-item" href="about.html#history">History and development</a></li>
-                            <li><a class="dropdown-item" href="about.html#quality">Quality Management</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Sustainability</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Activities</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurProducts</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item " href="shower gel.html">Shower Gel</a></li>
-                            <li><a class="dropdown-item" href="dish liquid.html">Dish Liquid</a></li>
-                            <li><a class="dropdown-item active" href="glass.html">Glass Cleaner</a></li>
-                            <li><a class="dropdown-item" href="fabric softener.html">Fabric Softener</a></li>
-                            <li><a class="dropdown-item" href="hand soup.html">Hand Soup</a></li>
-                            <li><a class="dropdown-item" href="power auto.html">Power Gel Automatic</a></li>
-                            <li><a class="dropdown-item" href="multi cleaner.html">Multi Cleaner</a></li>
-                            <li><a class="dropdown-item" href="air freshener.html">Air Freshener</a></li>
-                            <li><a class="dropdown-item" href="other.html">Other</a></li>
-
-
-
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">OurBrands</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="true.html">true</a></li>
-                            <li><a class="dropdown-item" href="vsh.html">vsh</a></li>
-
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-                <!-- Add other links if needed -->
-                </ul>
-
-                <!-- <div class="sidebar-footer mt-4">
-            <a href="#" class="btn custom-btn custom-border-btn">Get Started</a>
-        </div> -->
-            </div>
-        </div>
-
-
-        <header class="site-header d-flex flex-column justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-12 col-12 text-center">
-
-                        <h2 class="mb-0">Glass Cleaner</h2>
-                    </div>
-
-                </div>
-            </div>
-        </header>
-
         <section class="latest-podcast-section section-padding pb-0" id="section_2">
             <div class="container">
                 <div class="row justify-content-center">
